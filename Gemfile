@@ -4,12 +4,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.3'
-gem 'jquery-rails'
 gem 'devise'
-gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
+gem 'jquery-rails'
+gem 'rails', '~> 5.2.3'
 gem 'stripe'
+gem 'twitter-bootstrap-rails'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -21,6 +21,9 @@ gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
+gem 'carrierwave'
+gem "mini_magick"
+gem 'fog', '~> 1.38'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
