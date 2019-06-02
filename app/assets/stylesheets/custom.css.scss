@@ -1,10 +1,9 @@
 .user-name {
     padding: 0 !important ;
     padding-left: 5px;
-    padding-top: 15px !important;
+    padding-top: 5px !important;
     text-align: center;
     a {  
-        color: black !important;
         margin: 0 !important;
         padding: 5px!important;
     }    
@@ -17,12 +16,12 @@
     padding-left: 0;
 }
     
-.nav.navbar-right {    
-    padding-bottom: 10px;     
+.nav.navbar-right {     
     padding-top: 5px;
 }
     
 .nav.navbar-nav {
+    line-height: 10px;
     .navbar-link {
         border-radius: 5px;
         color: #fff;
@@ -41,7 +40,6 @@
 .nav.navbar-right li {
     .btn {
         color: #fff !important;
-        margin-top: 5%;
     }
     .btn-danger:hover, .btn-danger:focus {
         background-color: darken(#d9534f,20%) !important;
@@ -88,4 +86,24 @@ features {
 .listing {
     list-style: none;
     padding-left: 0;
+}
+
+footer{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.plan {
+    margin-top: 20px;
+    height: 210px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 1px silver;
+    .price {
+        font-size: 15px;
+    }
+}
+
+.button {
+    text-align: center;
 }

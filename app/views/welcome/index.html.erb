@@ -1,5 +1,10 @@
 <% if current_user %>
-  <h3>Welcome: <%= current_user.email %></h3>
+  <div class="jumbotron">
+    <h2>Welcome: <%= current_user.email %></h2>
+    <p class="lead">
+      Go and manage your photos! 
+    </p>
+  </div>
 <% else %>
   <div class="jumbotron">
     <h2>Welcome to the Photo Management App!</h2>
@@ -10,7 +15,7 @@
 
   <div class="row">
     <div class="plans clearfix">
-      <div class="col-lg-3 col-lg-offset-3 plan">
+      <div class="col-lg-3 col-lg-offset-2 plan">
         <h2>Premium Plan</h2>
         <div class="price pull-right">
           Price: $10
@@ -22,10 +27,11 @@
             <li>Access anywhere</li>
           </ul>
         </div>
-        <p>
+        <p class='button'>
           <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up' %>
         </p>
       </div>
+      <div class="col-lg-2"></div>
       <div class="col-lg-3 plan">
         <h2>Amaze Plan</h2>
         <div class="price pull-right">
@@ -39,7 +45,7 @@
             <li class='extra'>Unlimited projects</li>
           </ul>
         </div>
-        <p>
+        <p class='button'>
           <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up' %>
         </p>
       </div>
